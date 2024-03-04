@@ -38,7 +38,6 @@ class MYIblockElementsList extends CBitrixComponent {
         if ($cache->initCache($cacheTtl, $cacheKey, $cachePath)) {
             $arResult = $cache->getVars();
         } elseif ($cache->startDataCache()) {
-            $cacheInvalid = false;
             $taggedCache->startTagCache($cachePath);
 
             // Получаем ID свойства тегов
